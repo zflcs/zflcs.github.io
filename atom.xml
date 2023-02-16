@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-15T16:06:05.951Z</updated>
+  <updated>2023-02-16T01:20:19.910Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="http://example.com/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://example.com/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
     <published>2023-02-15T16:05:31.435Z</published>
-    <updated>2023-02-15T16:06:05.951Z</updated>
+    <updated>2023-02-16T01:20:19.910Z</updated>
     
+    <content type="html"><![CDATA[<p>是睡得</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;是睡得&lt;/p&gt;
+</summary>
+      
     
     
     
@@ -36,7 +44,7 @@
     <published>2023-02-15T15:16:38.480Z</published>
     <updated>2023-02-15T16:01:51.054Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="vivado-安装"><a href="#vivado-安装" class="headerlink" title="vivado 安装"></a>vivado 安装</h3><ol><li>从官网下载<a href="https://china.xilinx.com/support/download.html">vivado</a></li><li>之后的安装在网上找个教程，按照提示一步一步安装</li></ol><h3 id="vivado-创建新项目"><a href="#vivado-创建新项目" class="headerlink" title="vivado 创建新项目"></a>vivado 创建新项目</h3><ol><li>双击 vivado，进入到开始界面，点击创建新项目，选择项目名和安装位置</li><li>创建 RTL 项目，并勾选 <code>Do not specify sources at this time</code></li><li>选择对应的部件，即可创建新项目</li></ol><h3 id="vivado-添加源文件以及测试文件"><a href="#vivado-添加源文件以及测试文件" class="headerlink" title="vivado 添加源文件以及测试文件"></a>vivado 添加源文件以及测试文件</h3><ol><li>在 Sources 框中选中 <code>Design Sources</code> 目录之后点击上方的 ➕ 添加源文件，添加测试文件同理，选中 <code>Simulation Sources</code>  目录之后点击 ➕<br> <img src="/.com//vivado_sources.png"></li><li>运行 RTL 仿真，选中 <code>Simulation Sources</code> 目录下的子目录 <code>sim_1</code>，右键点击对应按钮<br> <img src="/.com//vivado_simulation1.png"></li><li>若源文件和测试文件均没有出现错误，则会出现以下界面，可以在右侧观察波形图<br> <img src="/.com//vivado_simulation2.png"></li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="vivado-安装"><a href="#vivado-安装" class="headerlink" title="vivado 安装"></a>vivado 安装</h3><ol><li>从官网下载<a href="https://china.xilinx.com/support/download.html">vivado</a></li><li>之后的安装在网上找个教程，按照提示一步一步安装</li></ol><h3 id="vivado-创建新项目"><a href="#vivado-创建新项目" class="headerlink" title="vivado 创建新项目"></a>vivado 创建新项目</h3><ol><li>双击 vivado，进入到开始界面，点击创建新项目，选择项目名和安装位置</li><li>创建 RTL 项目，并勾选 <code>Do not specify sources at this time</code></li><li>选择对应的部件，即可创建新项目</li></ol><h3 id="vivado-添加源文件以及测试文件"><a href="#vivado-添加源文件以及测试文件" class="headerlink" title="vivado 添加源文件以及测试文件"></a>vivado 添加源文件以及测试文件</h3><ol><li>在 Sources 框中选中 <code>Design Sources</code> 目录之后点击上方的 ➕ 添加源文件，添加测试文件同理，选中 <code>Simulation Sources</code>  目录之后点击 ➕<br> <img src="/vivado_sources.png"></li><li>运行 RTL 仿真，选中 <code>Simulation Sources</code> 目录下的子目录 <code>sim_1</code>，右键点击对应按钮<br> <img src="/vivado_simulation1.png"></li><li>若源文件和测试文件均没有出现错误，则会出现以下界面，可以在右侧观察波形图<br> <img src="/vivado_simulation2.png"></li></ol>]]></content>
     
     
       
