@@ -17,18 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>404 Not Found：该页无法显示 | 神明难再的博客</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http://example.com/404.html">
+  <title>RISC-V CPU取指令阶段 | 神明难再的博客</title>
+  <meta name="description" content="取指令阶段在取出存储器中的指令的同时，还需要将 PC 寄存器自增，准备取下一条指令 PC 模块1. 设计与实现上电之后，PC 寄存器需要从某个初始值开始读取指令，因此这个模块需要一个起始地址参数 init_addr，除此之外，还定义了总线宽度参数 n，这样即可通过修改参数生成 32&#x2F;64 位的 CPU。chisel 会帮助生成 clock 和 reset，因此不需要额外定义这两个端口。代码如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RISC-V CPU取指令阶段">
+<meta property="og:url" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="取指令阶段在取出存储器中的指令的同时，还需要将 PC 寄存器自增，准备取下一条指令 PC 模块1. 设计与实现上电之后，PC 寄存器需要从某个初始值开始读取指令，因此这个模块需要一个起始地址参数 init_addr，除此之外，还定义了总线宽度参数 n，这样即可通过修改参数生成 32&#x2F;64 位的 CPU。chisel 会帮助生成 clock 和 reset，因此不需要额外定义这两个端口。代码如下：">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-14T06:38:24.033Z">
-<meta property="article:modified_time" content="2023-02-14T06:38:24.033Z">
+<meta property="og:image" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/wave.png">
+<meta property="article:published_time" content="2023-02-16T11:50:04.142Z">
+<meta property="article:modified_time" content="2023-02-16T15:23:57.524Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="RISC-V">
+<meta property="article:tag" content="vivado">
+<meta property="article:tag" content="chisel">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/wave.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/404.html">
+  <link rel="canonical" href="http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -339,14 +346,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="page-" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-RISC-V CPU取指令阶段" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      404 Not Found：该页无法显示
+      RISC-V CPU取指令阶段
     </h1>
   
 
@@ -354,22 +361,38 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/404.html" class="article-date">
-	  <time datetime="2023-02-14T06:38:24.033Z" itemprop="datePublished">2023-02-14</time>
+	<a href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/" class="article-date">
+	  <time datetime="2023-02-16T11:50:04.142Z" itemprop="datePublished">2023-02-16</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%A5%9E%E6%98%8E%E9%9A%BE%E5%86%8D%E7%9A%84%E7%A1%AC%E4%BB%B6%E4%B9%8B%E6%97%85/">神明难再的硬件之旅</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/RISC-V/" rel="tag">RISC-V</a>, <a class="article-tag-link-link" href="/tags/chisel/" rel="tag">chisel</a>, <a class="article-tag-link-link" href="/tags/vivado/" rel="tag">vivado</a>
+  </span>
+
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/404.html#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <script type="text/javascript" src="//www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="<%- config.url %>" homePageName="回到我的主页"></script>
+        <p>取指令阶段在取出存储器中的指令的同时，还需要将 PC 寄存器自增，准备取下一条指令</p>
+<h3 id="PC-模块"><a href="#PC-模块" class="headerlink" title="PC 模块"></a>PC 模块</h3><h4 id="1-设计与实现"><a href="#1-设计与实现" class="headerlink" title="1. 设计与实现"></a>1. 设计与实现</h4><p>上电之后，PC 寄存器需要从某个初始值开始读取指令，因此这个模块需要一个起始地址参数 init_addr，除此之外，还定义了总线宽度参数 n，这样即可通过修改参数生成 32/64 位的 CPU。chisel 会帮助生成 clock 和 reset，因此不需要额外定义这两个端口。代码如下：</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> mycpu  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">import</span> chisel3._  </span><br><span class="line">  </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pc</span>(<span class="params">n: <span class="type">Int</span>, init_addr: <span class="type">Int</span></span>) <span class="keyword">extends</span> <span class="title">Module</span></span>&#123;  </span><br><span class="line"><span class="keyword">val</span> io = <span class="type">IO</span>(<span class="keyword">new</span> <span class="type">Bundle</span> &#123;  </span><br><span class="line"><span class="keyword">val</span> pc = <span class="type">Output</span>(<span class="type">UInt</span>(n.<span class="type">W</span>)) <span class="comment">// 输出地址  </span></span><br><span class="line"><span class="keyword">val</span> ce = <span class="type">Output</span>(<span class="type">UInt</span>(<span class="number">1.</span><span class="type">W</span>)) <span class="comment">// 用于在 reset 时禁止使用 pc 寄存器  </span></span><br><span class="line">&#125;)  </span><br><span class="line"><span class="comment">// 使用 chisel 寄存器部件，Reg 默认会在时钟上升沿进行操作  </span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">val</span> inner_pc = <span class="type">RegInit</span>(init_addr.<span class="type">U</span>(n.<span class="type">W</span>))  </span><br><span class="line">io.pc := inner_pc  </span><br><span class="line"><span class="keyword">private</span> <span class="keyword">val</span> inner_ce = <span class="type">RegInit</span>(<span class="number">0.</span><span class="type">U</span>(<span class="number">1.</span><span class="type">W</span>))  </span><br><span class="line">io.ce := inner_ce  </span><br><span class="line"><span class="comment">// 只有当芯片使能时，pc 才会自增  </span></span><br><span class="line">when(inner_ce.asBool())&#123;  </span><br><span class="line">inner_pc := inner_pc + (n / <span class="number">8</span>).<span class="type">U</span>  </span><br><span class="line">&#125;.otherwise&#123;  </span><br><span class="line">inner_pc := init_addr.<span class="type">U</span>(n.<span class="type">W</span>)  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="comment">// 当复位时，芯片使能关闭  </span></span><br><span class="line">when(reset.asBool()) &#123;  </span><br><span class="line">inner_ce := <span class="number">0.</span><span class="type">U</span>  </span><br><span class="line">&#125;.otherwise &#123;  </span><br><span class="line">inner_ce := <span class="number">1.</span><span class="type">U</span>  </span><br><span class="line">&#125;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 生成 verilog 文件</span></span><br><span class="line"><span class="class"><span class="keyword">object</span> <span class="title">PcTest</span> <span class="keyword">extends</span> <span class="title">App</span> </span>&#123;  </span><br><span class="line"><span class="type">Driver</span>.execute(<span class="type">Array</span>(<span class="string">&quot;--target-dir&quot;</span>, <span class="string">&quot;generated/Pc&quot;</span>), () =&gt; <span class="keyword">new</span> <span class="type">Pc</span>(<span class="number">32</span>, <span class="number">0x1000</span>))  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-仿真测试"><a href="#2-仿真测试" class="headerlink" title="2. 仿真测试"></a>2. 仿真测试</h4><p>目前还没有板子，因此只进行了 RTL 级的仿真，先编写测试文件，每过 100 个时间单位，clk 取反来模拟时钟信号；每过 2000 个时间单位，reset 取反来模拟复位，再过 100 个时间单位，reset 取反来模拟芯片使能，pc 自增。代码如下：</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">module <span class="type">PcTest</span>;</span><br><span class="line">wire[<span class="number">31</span>: <span class="number">0</span>] pc;</span><br><span class="line">wire ce;</span><br><span class="line">reg clk, reset;</span><br><span class="line"></span><br><span class="line">initial begin</span><br><span class="line">    clk = <span class="number">0</span>;</span><br><span class="line">    reset = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">always #(<span class="number">100</span>) begin</span><br><span class="line">    clk = ~clk;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">always #(<span class="number">2000</span>) begin</span><br><span class="line">    reset = ~reset;</span><br><span class="line">    #<span class="number">100</span></span><br><span class="line">    reset = ~reset;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="type">Pc</span> p(.clock(clk), .reset(reset), .io_pc(pc), .io_ce(ce));</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
+<p>vivado RTL 仿真波形如下：<br><img src="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/wave.png"></p>
 
       
     </div>
@@ -379,7 +402,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/404.html" title="404 Not Found：该页无法显示" target="_blank" rel="external">http://example.com/404.html</a>
+      <a href="http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/" title="RISC-V CPU取指令阶段" target="_blank" rel="external">http://example.com/2023/02/16/RISC-V CPU取指令阶段/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -410,12 +433,28 @@
   </article>
   
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
 
   
 </div>
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/" title="RISC-V CPU实现（序章）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
   
   
   <!-- Button trigger modal -->
@@ -531,6 +570,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

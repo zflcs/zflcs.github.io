@@ -17,18 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>标签 | 神明难再的博客</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://example.com/tags/index.html">
+  <title>RISC-V CPU实现（序章） | 神明难再的博客</title>
+  <meta name="description" content="学完了一些工具和基本的语法之后，开始动手实现一个 RISC-V 的 CPU，先不考虑存储器这些 项目目标  支持参数化  功能目标  支持 RISC-V 整型指令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RISC-V CPU实现（序章）">
+<meta property="og:url" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="学完了一些工具和基本的语法之后，开始动手实现一个 RISC-V 的 CPU，先不考虑存储器这些 项目目标  支持参数化  功能目标  支持 RISC-V 整型指令">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-14T07:32:35.025Z">
-<meta property="article:modified_time" content="2023-02-14T07:32:35.025Z">
+<meta property="og:image" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/mips.png">
+<meta property="og:image" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/mips_flow.png">
+<meta property="article:published_time" content="2023-02-16T11:33:40.461Z">
+<meta property="article:modified_time" content="2023-02-16T15:23:24.343Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="RISC-V">
+<meta property="article:tag" content="MPIS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/mips.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/tags/index.html">
+  <link rel="canonical" href="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -336,473 +343,185 @@
 </aside>
 
   
-  <main class="main" role="main">
-  <article class="article article-tags post-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs">标签</h1>
-      <p class="text-muted hidden-xs">共 9 个标签</p>
-      <nav role="navigation" id="nav-main" class="okayNav">
-        <ul>
-          <li><a href="/tags">All</a></li>
-          
-          <li><a href="/tags/RISC-V/">RISC-V</a></li>
-          
-          <li><a href="/tags/vivado/">vivado</a></li>
-          
-          <li><a href="/tags/chisel/">chisel</a></li>
-          
-          <li><a href="/tags/wsl/">wsl</a></li>
-          
-          <li><a href="/tags/java/">java</a></li>
-          
-          <li><a href="/tags/scala/">scala</a></li>
-          
-          <li><a href="/tags/sbt/">sbt</a></li>
-          
-          <li><a href="/tags/verilog/">verilog</a></li>
-          
-          <li><a href="/tags/MPIS/">MPIS</a></li>
-          
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <div class="article-body">
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-RISC-V CPU实现（序章）" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
       
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/RISC-V/" title="#RISC-V"># RISC-V</a>
-        <small class="text-muted">(Total 2 articles)</small>
-      </h3>
-      <div class="row">
         
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-16T11:50:04.142Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/">RISC-V CPU取指令阶段</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/RISC-V/" class="label label-default mb">RISC-V</a>
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/chisel/" class="label label-default mb">chisel</a>
-     
-     
-   </div>
-   
-</article>
+  
+    <h1 class="article-title" itemprop="name">
+      RISC-V CPU实现（序章）
+    </h1>
+  
 
-
-        </div>
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/" class="article-date">
+	  <time datetime="2023-02-16T11:33:40.461Z" itemprop="datePublished">2023-02-16</time>
+	</a>
+</span>
         
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-16T11:33:40.461Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/">RISC-V CPU实现（序章）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/RISC-V/" class="label label-default mb">RISC-V</a>
-     
-      <a href="/tags/MPIS/" class="label label-default mb">MPIS</a>
-     
-     
-   </div>
-   
-</article>
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%A5%9E%E6%98%8E%E9%9A%BE%E5%86%8D%E7%9A%84%E7%A1%AC%E4%BB%B6%E4%B9%8B%E6%97%85/">神明难再的硬件之旅</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/MPIS/" rel="tag">MPIS</a>, <a class="article-tag-link-link" href="/tags/RISC-V/" rel="tag">RISC-V</a>
+  </span>
 
 
-        </div>
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/#comments" class="article-comment-link">评论</a></span>
         
       </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
       
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/vivado/" title="#vivado"># vivado</a>
-        <small class="text-muted">(Total 3 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-16T11:50:04.142Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/">RISC-V CPU取指令阶段</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/RISC-V/" class="label label-default mb">RISC-V</a>
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/chisel/" class="label label-default mb">chisel</a>
-     
-     
-   </div>
-   
-</article>
+        <p>学完了一些工具和基本的语法之后，开始动手实现一个 RISC-V 的 CPU，先不考虑存储器这些</p>
+<h3 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h3><ul>
+<li><input disabled="" type="checkbox"> 支持参数化</li>
+</ul>
+<h3 id="功能目标"><a href="#功能目标" class="headerlink" title="功能目标"></a>功能目标</h3><ul>
+<li><input disabled="" type="checkbox"> 支持 RISC-V 整型指令</li>
+</ul>
+<p><img src="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/mips.png"></p>
+<p><img src="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/mips_flow.png"></p>
 
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-15T16:05:31.435Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/">vivado 安装和使用（二）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/verilog/" class="label label-default mb">verilog</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-15T15:16:38.480Z" itemprop="datePublished">2023-02-15</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/15/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89/">vivado 安装和使用（一）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/verilog/" class="label label-default mb">verilog</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/chisel/" title="#chisel"># chisel</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-16T11:50:04.142Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/">RISC-V CPU取指令阶段</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/RISC-V/" class="label label-default mb">RISC-V</a>
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/chisel/" class="label label-default mb">chisel</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/wsl/" title="#wsl"># wsl</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-14T07:34:24.226Z" itemprop="datePublished">2023-02-14</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/14/WSL%20%E5%AE%89%E8%A3%85%20java%E3%80%81Scala%E3%80%81sbt/">在 WSL 中安装 Java、Scala、sbt</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/wsl/" class="label label-default mb">wsl</a>
-     
-      <a href="/tags/java/" class="label label-default mb">java</a>
-     
-      <a href="/tags/scala/" class="label label-default mb">scala</a>
-     
-     
-      <span class="label label-default mb">···</span>
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/java/" title="#java"># java</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-14T07:34:24.226Z" itemprop="datePublished">2023-02-14</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/14/WSL%20%E5%AE%89%E8%A3%85%20java%E3%80%81Scala%E3%80%81sbt/">在 WSL 中安装 Java、Scala、sbt</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/wsl/" class="label label-default mb">wsl</a>
-     
-      <a href="/tags/java/" class="label label-default mb">java</a>
-     
-      <a href="/tags/scala/" class="label label-default mb">scala</a>
-     
-     
-      <span class="label label-default mb">···</span>
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/scala/" title="#scala"># scala</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-14T07:34:24.226Z" itemprop="datePublished">2023-02-14</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/14/WSL%20%E5%AE%89%E8%A3%85%20java%E3%80%81Scala%E3%80%81sbt/">在 WSL 中安装 Java、Scala、sbt</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/wsl/" class="label label-default mb">wsl</a>
-     
-      <a href="/tags/java/" class="label label-default mb">java</a>
-     
-      <a href="/tags/scala/" class="label label-default mb">scala</a>
-     
-     
-      <span class="label label-default mb">···</span>
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/sbt/" title="#sbt"># sbt</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-14T07:34:24.226Z" itemprop="datePublished">2023-02-14</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/14/WSL%20%E5%AE%89%E8%A3%85%20java%E3%80%81Scala%E3%80%81sbt/">在 WSL 中安装 Java、Scala、sbt</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/wsl/" class="label label-default mb">wsl</a>
-     
-      <a href="/tags/java/" class="label label-default mb">java</a>
-     
-      <a href="/tags/scala/" class="label label-default mb">scala</a>
-     
-     
-      <span class="label label-default mb">···</span>
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/verilog/" title="#verilog"># verilog</a>
-        <small class="text-muted">(Total 2 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-15T16:05:31.435Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/">vivado 安装和使用（二）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/verilog/" class="label label-default mb">verilog</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-15T15:16:38.480Z" itemprop="datePublished">2023-02-15</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/15/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89/">vivado 安装和使用（一）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/vivado/" class="label label-default mb">vivado</a>
-     
-      <a href="/tags/verilog/" class="label label-default mb">verilog</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
-      
-      <h3 class="panel-title mb-1x">
-        <a href="/tags/MPIS/" title="#MPIS"># MPIS</a>
-        <small class="text-muted">(Total 1 articles)</small>
-      </h3>
-      <div class="row">
-        
-        <div class="col-md-6">
-          
-<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="panel-body">
-     <div class="article-meta">
-       <time datetime="2023-02-16T11:33:40.461Z" itemprop="datePublished">2023-02-16</time>
-     </div>
-     <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/">RISC-V CPU实现（序章）</a>
-     </h3>
-   </div>
-   
-   <div class="panel-footer">
-     
-      <a href="/tags/RISC-V/" class="label label-default mb">RISC-V</a>
-     
-      <a href="/tags/MPIS/" class="label label-default mb">MPIS</a>
-     
-     
-   </div>
-   
-</article>
-
-
-        </div>
-        
-      </div>
       
     </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/" title="RISC-V CPU实现（序章）" target="_blank" rel="external">http://example.com/2023/02/16/RISC-V CPU实现（序章）/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/zflcs" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/zflcs" target="_blank"><span class="text-dark">神明难再</span><small class="ml-1x">Operating System &amp; FPGA</small></a></h3>
+        <div>清华大学计算机系在读</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
   </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/" title="RISC-V CPU取指令阶段"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/" title="vivado 安装和使用（二）"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -857,6 +576,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 
