@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/</loc>
+    <lastmod>2023-02-21</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2023/02/21/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%20riscv-toolchain/</loc>
+    <lastmod>2023-02-21</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2023/02/17/RISC-V%20CPU%E8%AF%91%E7%A0%81%E9%98%B6%E6%AE%B5/</loc>
+    <lastmod>2023-02-17</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-02-17</lastmod>
   </url>
   <url>
     <loc>http://example.com/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/</loc>

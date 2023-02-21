@@ -17,16 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>归档 | 神明难再的博客</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <title>WSL 中编译 Rocket-chip project | 神明难再的博客</title>
+  <meta name="description" content="记录编译过程中遇到的问题和解决方案1. 进入 vsim 目录之后，make verilog 报错 Command &#39;mill&#39; not found 进入 mill 的说明文档网站Installation :: Mill (com-lihaoyi.github.io)，按照提示安装 mill">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WSL 中编译 Rocket-chip project">
+<meta property="og:url" content="http://example.com/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="记录编译过程中遇到的问题和解决方案1. 进入 vsim 目录之后，make verilog 报错 Command &#39;mill&#39; not found 进入 mill 的说明文档网站Installation :: Mill (com-lihaoyi.github.io)，按照提示安装 mill">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-02-21T13:34:11.935Z">
+<meta property="article:modified_time" content="2023-02-21T13:38:22.067Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="wsl">
+<meta property="article:tag" content="riscv">
+<meta property="article:tag" content="rocket-chip">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/archives/index.html">
+  <link rel="canonical" href="http://example.com/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -336,118 +343,173 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">归档</h1>
-	      <p class="text-muted">共 8 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
+  <div class="content">
+  <article id="post-编译 Rocket-chip project" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
   
+    <h1 class="article-title" itemprop="name">
+      WSL 中编译 Rocket-chip project
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/" class="article-date">
+	  <time datetime="2023-02-21T13:34:11.935Z" itemprop="datePublished">2023-02-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E7%A5%9E%E6%98%8E%E9%9A%BE%E5%86%8D%E7%9A%84%E7%A1%AC%E4%BB%B6%E4%B9%8B%E6%97%85/">神明难再的硬件之旅</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/riscv/" rel="tag">riscv</a>, <a class="article-tag-link-link" href="/tags/rocket-chip/" rel="tag">rocket-chip</a>, <a class="article-tag-link-link" href="/tags/wsl/" rel="tag">wsl</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h3 id="记录编译过程中遇到的问题和解决方案"><a href="#记录编译过程中遇到的问题和解决方案" class="headerlink" title="记录编译过程中遇到的问题和解决方案"></a>记录编译过程中遇到的问题和解决方案</h3><h4 id="1-进入-vsim-目录之后，make-verilog-报错-Command-39-mill-39-not-found"><a href="#1-进入-vsim-目录之后，make-verilog-报错-Command-39-mill-39-not-found" class="headerlink" title="1. 进入 vsim 目录之后，make verilog 报错 Command &#39;mill&#39; not found"></a>1. 进入 vsim 目录之后，make verilog 报错 <code>Command &#39;mill&#39; not found</code></h4><blockquote>
+<p>进入 mill 的说明文档网站<a target="_blank" rel="noopener" href="https://com-lihaoyi.github.io/mill/mill/Installation.html">Installation :: Mill (com-lihaoyi.github.io)</a>，按照提示安装 mill</p>
+</blockquote>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://example.com/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/" title="WSL 中编译 Rocket-chip project" target="_blank" rel="external">http://example.com/2023/02/21/编译 Rocket-chip project/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/zflcs" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/zflcs" target="_blank"><span class="text-dark">神明难再</span><small class="ml-1x">Operating System &amp; FPGA</small></a></h3>
+        <div>清华大学计算机系在读</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
     
-      
-      
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2023" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2023
-            </a>
-            <!-- <a href="/archives/2023" class="archive-year">2023</a> -->
-          </h3>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2023/02/21/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%20riscv-toolchain/" title="在 WSL 中安装 riscv-toolchain"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="collapse2023" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2023">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2023/02/21/%E7%BC%96%E8%AF%91%20Rocket-chip%20project/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-21T13:34:11.935Z" itemprop="datePublished">2023-02-21</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> WSL 中编译 Rocket-chip project
-</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
-    
-    
-    
-<a href="/2023/02/21/%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%20riscv-toolchain/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-21T08:23:06.630Z" itemprop="datePublished">2023-02-21</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 在 WSL 中安装 riscv-toolchain
-</a>
 
-
-  
-    
-    
-    
-<a href="/2023/02/17/RISC-V%20CPU%E8%AF%91%E7%A0%81%E9%98%B6%E6%AE%B5/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-17T10:56:58.180Z" itemprop="datePublished">2023-02-17</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> RISC-V CPU译码阶段
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/02/16/RISC-V%20CPU%E5%8F%96%E6%8C%87%E4%BB%A4%E9%98%B6%E6%AE%B5/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-16T11:50:04.142Z" itemprop="datePublished">2023-02-16</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> RISC-V CPU取指令阶段
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/02/16/RISC-V%20CPU%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%BA%8F%E7%AB%A0%EF%BC%89/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-16T11:33:40.461Z" itemprop="datePublished">2023-02-16</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> RISC-V CPU实现（序章）
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/02/16/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BA%8C%EF%BC%89/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-15T16:05:31.435Z" itemprop="datePublished">2023-02-16</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> vivado 安装和使用（二）
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/02/15/vivado%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-15T15:16:38.480Z" itemprop="datePublished">2023-02-15</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> vivado 安装和使用（一）
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/02/14/WSL%20%E5%AE%89%E8%A3%85%20java%E3%80%81Scala%E3%80%81sbt/" class="collection-item"   itemprop="url">
-  <time datetime="2023-02-14T07:34:24.226Z" itemprop="datePublished">2023-02-14</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 在 WSL 中安装 Java、Scala、sbt
-</a>
-
-
-  
-  
-    </div></div></div></section>
-  
-
-	    </div>
-  	</article>
-  	 	
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -502,6 +564,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 
